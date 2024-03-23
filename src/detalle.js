@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import {ListPage} from "./lista_miembros";
 
 const DetailPage = () => {
   const {login} = useParams();

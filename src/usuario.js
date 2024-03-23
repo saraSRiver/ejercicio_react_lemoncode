@@ -1,9 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const UserPage = ({member}) => {
-
-  
     return (
         <> 
           {member && member.map((member) => (
@@ -15,7 +13,6 @@ const UserPage = ({member}) => {
               </div>
             </>
           ))}
-        
         </>
         );
 }
