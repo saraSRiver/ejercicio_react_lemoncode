@@ -9,7 +9,7 @@ const DetailCharacterPage = () => {
     <>
       <h2>Vista en detalle del personaje</h2>
       <h3>Especie: {species}</h3>
-      <h3>Especie: {name}</h3>
+      <h3>Nombre: {name}</h3>
       <Link className="detail" to="/rick_morty">Vista predeterminada</Link>
     </>
   );

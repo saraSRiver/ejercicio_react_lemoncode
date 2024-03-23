@@ -25,18 +25,20 @@ React.useEffect(() => {
   return (
     <>
       <h2>Lista de personajes de 'Rick y Morty'</h2>
-      <div className="list-user-list-container">
+      <div className="list-container">
         <span className="list-header">Imagen</span>
         <span className="list-header">Id</span>
         <span className="list-header">Nombre</span>
         {characters.map((character) => (
           <>
+          <div className="user-container"  key={character.id}>
             <img src={character.image} />
-            <span key={character.id}>{character.id}</span>
+            <span>{character.id}</span>
             <Link to={`/detalle_rick_morty/${character.species}/${character.name}`}>{character.name} </Link> 
+          </div>
           </>))}
           <div className="buttons_detail">
-            <Link className="detail" to="/lista_miembros">Lista de usuarios</Link>
+            <Link className="detail" to="/">Lista de usuarios</Link>
           </div>
       </div>
     </>
